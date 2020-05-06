@@ -1,0 +1,73 @@
+.routerWrap {
+  .navWrap {
+    color: #fff;
+    background-color: #324661;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    align-items: center;
+    .navLeft {
+      display: flex;
+      .navLeftImage {
+        //background: url("../../assets/image/logo.png") no-repeat;
+        background-size: 100% 100%;
+        width: 160px;
+        height: 32px;
+        cursor: pointer;
+      }
+      .collapsed{
+          margin-left: 20px;
+          font-size: 20px;
+          cursor: pointer;
+      }
+    }
+    .navRight {
+      cursor: pointer;
+    }
+    .navCenter {
+      font-weight: bold;
+      letter-spacing: 5px;
+    }
+  }
+  .content {
+    display: flex;
+    min-height: calc(100vh - 50px);
+    background: #313a46;
+    color: #fff;
+    .leftMenu {
+      //max-width: 15%;
+      //min-width: 120px;
+      background-color: #202731;
+      .ant-menu-inline {
+        width: 220px;
+      }
+    }
+    .ant-menu {
+      background-color: #202731;
+      color: #fff;
+    }
+    .ant-menu-item-selected {
+      background-color: #434b56;
+      color: #fff;
+    }
+    .ant-menu-inline {
+      border-right: 2px solid #5a5e63;
+    }
+    .contentWrap {
+      width: 100%;
+      .breadcrumb{
+        padding: 10px 0px;
+        font-weight: bold;
+        color: #fff;
+        .ant-breadcrumb-separator {
+          color:#fff;
+        }
+        a{
+            display: inline;
+            color: #fff;
+        }
+    }
+    }
+  }
+}
